@@ -1,5 +1,6 @@
 package com.example.loginmvvm
 
+import android.util.Log
 import androidx.test.core.app.ActivityScenario
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.espresso.Espresso.*
@@ -16,6 +17,7 @@ class LoginActivityTest {
 
     @Test
     fun `successful login displays success message`() {
+        Log.d("hello","here");
         ActivityScenario.launch(LoginActivity::class.java)
 
         onView(withId(R.id.editTextUsername)).perform(typeText("admin"), closeSoftKeyboard())
