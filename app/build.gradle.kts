@@ -60,6 +60,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    debugImplementation(libs.androidx.appcompat)
 
     // AndroidX Lifecycle
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
@@ -68,6 +69,7 @@ dependencies {
     // Testing dependencies
     androidTestImplementation(libs.androidx.test.ext.junit)
     (libs.androidx.test.espresso.core)
+    androidTestImplementation(libs.androidx.appcompat)
 
     // MockK for ViewModel testing
     testImplementation(libs.mockk)
