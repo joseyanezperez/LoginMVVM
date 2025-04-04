@@ -2,7 +2,7 @@ package com.example.loginmvvm
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.lifecycle.Observer
-import com.example.loginmvvm.model.UserRepository
+import com.example.loginmvvm.model.LoginModel
 import com.example.loginmvvm.viewmodel.LoginViewModel
 import io.mockk.every
 import io.mockk.mockk
@@ -16,7 +16,7 @@ class LoginViewModelTest {
     @get:Rule
     val rule = InstantTaskExecutorRule() // Allows LiveData to update synchronously
 
-    private val repository: UserRepository = mockk()
+    private val repository: LoginModel = mockk()
     private val viewModel = LoginViewModel(repository) // Pass mock repository
 
     @Test

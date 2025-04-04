@@ -3,19 +3,19 @@ package com.example.loginmvvm.model
 import org.junit.Assert.*
 import org.junit.Test
 
-class UserRepositoryTest {
+class LoginModelTest {
 
-    private val userRepository = UserRepository()
+    private val loginModel = LoginModel()
 
     @Test
     fun `login with correct credentials should return true`() {
-        val result = userRepository.login("admin", "password")
+        val result = loginModel.login("admin", "password")
         assertTrue(result)
     }
 
     @Test
     fun `login with incorrect credentials should return false`() {
-        val result = userRepository.login("user", "wrongpassword")
+        val result = loginModel.login("user", "wrongpassword")
         assertFalse(result)
     }
 }
